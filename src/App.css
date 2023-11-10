@@ -1,38 +1,79 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightpink;
+  background-image: url('./assets/red-heart-icon.svg');
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+p {
+  position: sticky;
+  top: 35%;
+  left: 21%;
+  color: white;
+  font-family: Quicksand, sans-serif;
+  font-size: large;
+  line-height: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.previous-btn {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 45%;
+  right: 90%;
+  margin-left: 0px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.next-btn {
+  position: absolute;
+  top: 45%;
+  left: 88%;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+button {
+  height: 48px;
+  width: 86px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-yes {
+  position: sticky;
+  top: 42%;
+  left: 42%;
+  background-color: lightgreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-no {
+  position: sticky;
+  background-color: lightcoral;
+  cursor: not-allowed;
+}
+
+.img-final {
+  position: sticky;
+  top: 20%;
+  left: 38.5%;
+  width: 400px;
+  height: auto;
+  border-radius: 10%;
 }
